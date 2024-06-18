@@ -14,13 +14,13 @@
   font-display: swap;
 }
 :root {
-  --color-primary: #3a00ff;
-  --color-primary-alt: #6f6ffd;
-  --color-secondary: #d42257;
-  --color-background: #d2fbf7;
-  --color-text: #412d86;
+  --color-primary: #4350c6;
+  --color-primary-alt: #fc78ac;
+  --color-secondary: #f07e66;
+  --color-background: #2dd2cb;
+  --color-text: #000;
   --color-light: #fff;
-  --color-anchor: #3a00ff;
+  --color-anchor: #ffe451;
   --font-family: "Baloo 2", sans-serif;
   --font-weight-strong: 500;
   --font-size-h1: 6rem;
