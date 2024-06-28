@@ -17,8 +17,8 @@
     left: 50%;
     width: 2em;
     transform: translate(-50%, -100%);
-    background-color: var(--color-background);
-    color: var(--color-primary);
+    background-color: #f07e66;
+    color: #f07e66;
     font-size: 3rem;
     content: "S";
   }
@@ -27,7 +27,7 @@
     margin-top: 3rem;
     font-weight: var(--font-weight-strong);
     letter-spacing: 0.03em;
-    text-align: center;
+    text-align: left;
   }
 
   p a {

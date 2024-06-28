@@ -1,15 +1,15 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap");
 :root {
   --color-primary: #4350c6;
-  --color-primary-alt: #fc78ac;
-  --color-secondary: #f07e66;
+  --color-primary-alt: #f07e66;
+  --color-secondary: #fc78ac;
   --color-background: #fff;
   --color-text: #000;
   --color-light: #fff;
   --color-anchor: #ffe451;
-  --font-family: "Baloo 2", sans-serif;
-  --font-weight-strong: 500;
+  --font-family: "Fontdiner Swanky", serif;
+  --font-weight-strong: 400;
   --font-size-h1: 6rem;
   --font-size-h2: 3rem;
   --font-size-h3: 2rem;
@@ -93,6 +93,8 @@ h4 {
 h1 {
   font-size: var(--font-size-h1);
   font-size: clamp(2rem, 7vw, var(--font-size-h1));
+  text-transform: uppercase;
+  text-shadow: #fc78ac 1px 0 10px;
 }
 
 h2 {
