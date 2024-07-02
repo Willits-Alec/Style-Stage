@@ -1,7 +1,10 @@
-$color-primary: #4350c6 !default;
-$color-primary-alt: #2dd2cb !default;
-$color-secondary: #fc78ac !default;
-$color-background: #fff !default;
+$color-primary: #fc78ac !default;
+$color-primary-alt: #ffe451 !default;
+$color-secondary: #2dd2cb !default;
+$color-background: #4350c6 !default;
+$color-text: #000 !default;
+$color-light: #fff !default;
+$color-anchor: #f07e66 !default;
 
 $brand-colors: (
   primary: $color-primary,
@@ -9,20 +12,25 @@ $brand-colors: (
   secondary: $color-secondary,
 ) !default;
 
-$color-body: scale-color(
-  $color-primary,
-  $lightness: -30%,
-  $saturation: -50%
-) !default;
-$color-gray: mix(#767676, $color-body, 70%) !default;
+$color-body:$color-background;
+// $color-body: scale-color(
+//   $color-primary,
+//   // $lightness: -30%,
+//   // $saturation: -50%
+// ) !default;
+ $color-gray: mix(#767676, $color-body, 70%) !default;
 
 $colors: map-merge(
   $brand-colors,
   (
     background: $color-background,
-    text: $color-body,
+    text: $color-text,
     light: #fff,
   )
+);
+
+$anchor-colors: (
+  a: $color-anchor
 );
 
 @function color($key) {

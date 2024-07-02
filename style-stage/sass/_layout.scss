@@ -54,3 +54,8 @@ article,
   grid-gap: 1em;
   list-style: none;
 }
+
+article, #contribute {
+  grid-column: 2;
+  grid-row: 2;
+}
