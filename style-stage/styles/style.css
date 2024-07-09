@@ -7,9 +7,10 @@
   --color-secondary: #2dd2cb;
   --color-background: #4350c6;
   --color-text: #000;
-  --color-light: #fff;
-  --color-anchor: #fc78ac;
-  --font-family: "Baloo 2", sans-serif;
+  --color-light: #f07e66;
+  --color-anchor: #fff;
+  --font-family-text: "Baloo 2", sans-serif;
+  --font-family: "Fontdiner Swanky", decorative;
   --font-weight-strong: 500;
   --font-size-h1: 6rem;
   --font-size-h2: 3rem;
@@ -115,11 +116,13 @@ h4 {
 
 p,
 li {
+  font-family: var(--font-family-text);
   font-size: var(--font-size-text);
 }
 
 p {
   margin: 0 0 1rem;
+  font-family: var(--font-family-text);
 }
 
 article .container > ul:not(.features) > li + li,
@@ -275,7 +278,7 @@ header h1 {
 }
 header h2 {
   max-width: 30ch;
-  color: #fe89e2;
+  color: #fff;
 }
 
 nav ul {
@@ -469,6 +472,7 @@ nav ul li {
   position: relative;
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+  align-content: space-around;
   /*! 
     * SVGs from Hero Patterns
     * @link http://www.heropatterns.com/
@@ -513,9 +517,12 @@ nav ul li {
 #styles {
   margin: 5vh 0 20vh;
   text-align: center;
+  background-color: #b3f8f1;
 }
 #styles h2 {
-  color: var(--color-primary);
+  color: var(--color-text);
+  font-family: Fontdiner Swanky;
+  margin: 1rem 0 2rem 0;
 }
 
 #styles .features li,
@@ -562,7 +569,7 @@ nav ul li {
 }
 .profile h4 {
   margin: 0;
-  color: var(--color-secondary);
+  color: var(--color-text);
   text-align: center;
 }
 .profile .container {
@@ -718,7 +725,7 @@ nav ul li {
   width: 100%;
   min-height: 2.5em;
   background-color: var(--color-background);
-  color: var(--color-primary);
+  color: #fff;
 }
 
 .link-codepen {
@@ -734,7 +741,7 @@ nav ul li {
   background-repeat: no-repeat;
   background-position: right 130%;
   background-size: 14%;
-  color: #6f6ffd;
+  color: #ffe451;
   font-size: 0.85em;
   content: "Jump right in";
 }
