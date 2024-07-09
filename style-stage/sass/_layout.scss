@@ -2,7 +2,7 @@
 body {
   background-color: var(--color-background);
   color: var(--color-text);
-  font-family: var(--font-family);
+  font-family: var(--font-family-text);
 }
 
 main {
@@ -35,7 +35,7 @@ article,
 #styles {
   .container {
     width: 100%;
-    max-width: 80ch;
+    max-width: 120ch;
     margin-right: auto;
     margin-left: auto;
   }
@@ -49,9 +49,9 @@ article,
 .page-footer ul,
 .features {
   display: grid;
-  margin: 0 0 15rem;
-  padding: 20;
-  grid-gap: 135em;
+  margin: 0 0 2rem;
+  padding: 0;
+  grid-gap: 1em;
   list-style: none;
 }
 
