@@ -21,9 +21,9 @@
 
 [class^="link"]:not(.link-codepen) {
   min-height: 3em;
-  background-color: var(--color-primary);
+  background-color: var(--color-text);
   color: #fff;
-  box-shadow: 0.18em 0.18em var(--color-secondary);
+  box-shadow: 0.20em 0.19em var(--color-secondary), -.15em -.19em var(--color-primary-alt);
 }
 
 [class^="link"]:not(.link-codepen),
