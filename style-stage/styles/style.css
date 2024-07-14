@@ -5,7 +5,7 @@
   --color-primary: #fc78ac;
   --color-primary-alt: #ffe451;
   --color-secondary: #2dd2cb;
-  --color-background: #4350c6;
+  --color-background: rgba(67, 80, 198, 0.8470588235);
   --color-text: #000;
   --color-light: #fff;
   --color-anchor: #fff;
@@ -52,7 +52,7 @@ body {
   line-height: 1.5;
   text-rendering: optimizeSpeed;
   overflow-x: hidden;
-  background: var(#4350c6);
+  background: var(rgba(67, 80, 198, 0.8470588235));
 }
 
 /* Make images easier to work with */
@@ -106,6 +106,30 @@ h2 {
   align-self: center;
   color: var(--color-background);
   padding: 0.25em 0.5em;
+}
+
+#main h2:nth-child(1) {
+  background-color: pink;
+}
+
+#main h2:nth-child(2) {
+  background-color: #ffe451;
+}
+
+#main h2:nth-child(3) {
+  background-color: #f07e66;
+}
+
+#main h2:nth-child(4) {
+  background-color: #2dd2cb;
+}
+
+#main h2:nth-child(5) {
+  background-color: orange;
+}
+
+#main h2:nth-child(6) {
+  background-color: #fc78ac;
 }
 
 h3 {
@@ -194,6 +218,14 @@ blockquote::after {
   blockquote::after {
     transform: translate(25%, 55%) rotate(-5deg);
   }
+}
+
+#guidelines {
+  background-color: #ffe451;
+}
+
+#contribute {
+  background-color: orange;
 }
 
 #guidelines p:nth-of-type(1),
@@ -574,10 +606,6 @@ nav ul a:hover::before, nav ul a:focus::before {
   position: relative;
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
-  /*! 
-    * SVGs from Hero Patterns
-    * @link http://www.heropatterns.com/
-    */
 }
 .features li {
   display: grid;
@@ -658,13 +686,6 @@ nav ul a:hover::before, nav ul a:focus::before {
   text-shadow: 3px 2px #000, 4px 3px #ffe451, 5px 5px #f07e66, 6px 6px #fff;
   content: "Grid FTW!";
 }
-#styles .features::after .parallelogram,
-.features.patterned::after .parallelogram {
-  width: 100px;
-  height: 50px;
-  transform: skew(20deg);
-  background: #fff;
-}
 
 .profile {
   width: 95vw;
@@ -675,7 +696,7 @@ nav ul a:hover::before, nav ul a:focus::before {
 }
 .profile h4 {
   margin: 0;
-  color: var(--color-secondary);
+  color: var(--color-background);
   text-align: center;
 }
 .profile .container {
@@ -686,7 +707,7 @@ nav ul a:hover::before, nav ul a:focus::before {
 .profile .container > a {
   min-height: 2em;
   border: 2px solid currentColor;
-  color: var(--color-secondary);
+  color: var(--color-background);
 }
 .profile ul {
   display: flex;

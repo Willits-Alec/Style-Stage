@@ -27,6 +27,24 @@ h2 {
   color: var(--color-background);
   padding: 0.25em 0.5em;
 }
+  #main h2:nth-child(1) {
+   background-color: pink;
+  }
+  #main h2:nth-child(2) {
+    background-color: #ffe451;
+  }
+  #main h2:nth-child(3) {
+    background-color: #f07e66;
+  }
+  #main h2:nth-child(4) {
+    background-color: #2dd2cb;
+  }
+  #main h2:nth-child(5) {
+    background-color: orange;
+  }
+  #main h2:nth-child(6) {
+    background-color: #fc78ac;
+  }
 
 h3 {
   font-size: var(--font-size-h3);
@@ -126,6 +144,12 @@ blockquote {
       transform: translate(25%, 55%) rotate(-5deg);
     }
   }
+}
+#guidelines {
+  background-color: #ffe451;
+}
+#contribute {
+  background-color: orange;
 }
 
 #guidelines,

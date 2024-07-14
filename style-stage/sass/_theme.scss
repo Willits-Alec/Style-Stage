@@ -1,7 +1,7 @@
 $color-primary: #fc78ac !default;
 $color-primary-alt: #ffe451 !default;
 $color-secondary: #2dd2cb !default;
-$color-background: #4350c6 !default;
+$color-background: #4350c6d8 !default;
 $color-text: #000 !default;
 $color-light: #ef9da3 !default;
 $color-anchor: #fff !default;
@@ -14,11 +14,11 @@ $brand-colors: (
 ) !default;
 
 $color-body:$color-background;
-$color-body: scale-color(
-  $color-primary,
-  // $lightness: -30%,
-  // $saturation: -50%
-) !default;
+// $color-body: scale-color(
+//   $color-primary,
+//   // $lightness: -30%,
+// //   // $saturation: -50%
+// ) !default;
  $color-gray: mix(#767676, $color-body, 70%) !default;
 
 $colors: map-merge(

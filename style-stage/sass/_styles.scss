@@ -3,10 +3,6 @@
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
 
-  /*! 
-    * SVGs from Hero Patterns
-    * @link http://www.heropatterns.com/
-    */
   li {
     display: grid;
     position: relative;
@@ -91,14 +87,6 @@
     padding-top: 1em;
     transform: rotate(-15deg);
     transform-origin: bottom right;
-    .parallelogram {
-      width: 100px;
-      height: 50px;
-      transform: skew(20deg);
-      background: #fff;
-    }
-    // background: (100px solid yellow, 50px solid transparent, 4px solid transparent, 8px 8px 8px black);
-    // background-repeat: no-repeat;
     background-size: 50%;
     color: var(--color-secondary);
     font-size: 2rem;

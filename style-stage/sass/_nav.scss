@@ -9,6 +9,7 @@ nav {
 
     li {
       margin: 0.25rem;
+      
       &:nth-child(1) a::before {
       margin-bottom: .6em;
       border-top: 50px solid transparent;
@@ -38,7 +39,7 @@ nav {
         margin-top: .4em;
         margin-left: 1.6em;
         margin-bottom: .6em;
-        border-right: 25px solid #f07e66 ;
+        border-right: 25px solid #f07e66;
         border-top: 25px solid #f07e66;
         border-left: 25px solid #f07e66;
         border-bottom: 25px solid #f07e66;
