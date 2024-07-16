@@ -1,8 +1,6 @@
 #files {
   display: grid;
-  place-content: center;
   margin: 5vh auto;
-  text-align: center;
 
   h3 {
     height: 0;
@@ -10,11 +8,20 @@
   }
 
   .container {
-    display: inline-block;
     padding: 5vmin;
-    outline: 4px dashed var(--color-secondary);
     background-color: var(--color-background);
-    text-align: center;
+    margin-top: 5.4em;
+    margin-left: 1.6em;
+    margin-bottom: .6em;
+    border-right: 25px solid violet;
+    border-top: 55px solid #ffe451;
+    border-left: 25px solid #f07e66;
+    border-bottom: 55px solid #2dd2cb;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 8px 8px 8px black;
 
     a:not(:last-child) {
       margin: 0.5rem;

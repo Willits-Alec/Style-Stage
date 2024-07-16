@@ -5,15 +5,15 @@
 // For example:
 // $color-primary: #3a0;
 @import "theme";
+@import "layout";
 @import "reset";
 @import "logomark";
 @import "typography";
-@import "layout";
 @import "header";
 @import "nav";
 @import "about";
 @import "guidelines";
-@import "contribute";
+//@import "contribute";
 @import "files";
 @import "styles";
 @import "profile";

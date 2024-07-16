@@ -7,7 +7,7 @@ header {
   place-items: center;
   padding: 10vh 2rem;
   background-repeat: repeat-x;
-  background-position: 0 -38px, 17px -40px;
+  background-position: 0 -38px, 20px -50px;
   color: var(--color-primary-alt);
   text-align: center;
   background-color: #000;
@@ -17,12 +17,47 @@ header {
     rgba(255,255,255) 70px);
 
   h1 {
-    @include logomark;
-    background-color: #fff;
+    //@include logomark;
+    background-color: #4350c6;
+    font-size: 150px;
+    //margin-top: .4em;
+    //margin-left: 1.6em;
+    //margin-bottom: .6em;
+    border-right: 25px solid violet;
+    border-top: 50px solid red;
+    border-left: 25px solid #f07e66;
+    border-bottom: 35px solid #2dd2cb;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 8px 8px 8px black;
   }
 
   h2 {
     max-width: 30ch;
-    color: var(--color-primary);
+    color: orange;
+    background-color: #000;
+    //text-shadow: 3px 2px white;
+    margin-top: 1.4em;
+    margin-left: 1.6em;
+    margin-bottom: .6em;
+    // border-top: 25px solid #2dd2cb;
+    // border-right: 10px solid #f07e66;
+    // border-left: 25px solid red;
+    // border-bottom: 15px solid  violet;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 60px;
+    box-shadow: -8px 8px white;
+  }
+  
+  p{
+    background-color: #f07e66;
+    color: #000;
+  }
+  a {
+    color: #2dd2cb;
   }
 }
