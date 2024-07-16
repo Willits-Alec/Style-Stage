@@ -5,10 +5,10 @@
   --color-primary: #fc78ac;
   --color-primary-alt: #ffe451;
   --color-secondary: #2dd2cb;
-  --color-background: #4350c6;
+  --color-background: rgba(67, 80, 198, 0.8470588235);
   --color-text: #000;
   --color-light: #fff;
-  --color-anchor: #fc78ac;
+  --color-anchor: #fff;
   --font-family: "Baloo 2", sans-serif;
   --font-weight-strong: 500;
   --font-size-h1: 6rem;
@@ -52,7 +52,7 @@ body {
   line-height: 1.5;
   text-rendering: optimizeSpeed;
   overflow-x: hidden;
-  background: var(#4350c6);
+  background: var(rgba(67, 80, 198, 0.8470588235));
 }
 
 /* Make images easier to work with */
@@ -108,6 +108,30 @@ h2 {
   padding: 0.25em 0.5em;
 }
 
+#main h2:nth-child(1) {
+  background-color: pink;
+}
+
+#main h2:nth-child(2) {
+  background-color: #ffe451;
+}
+
+#main h2:nth-child(3) {
+  background-color: #f07e66;
+}
+
+#main h2:nth-child(4) {
+  background-color: #2dd2cb;
+}
+
+#main h2:nth-child(5) {
+  background-color: orange;
+}
+
+#main h2:nth-child(6) {
+  background-color: #fc78ac;
+}
+
 h3 {
   font-size: var(--font-size-h3);
 }
@@ -142,6 +166,7 @@ strong {
 
 a {
   color: var(--color-anchor);
+  text-transform: uppercase;
 }
 
 blockquote {
@@ -195,6 +220,14 @@ blockquote::after {
   }
 }
 
+#guidelines {
+  background-color: #ffe451;
+}
+
+#contribute {
+  background-color: orange;
+}
+
 #guidelines p:nth-of-type(1),
 #contribute p:nth-of-type(1) {
   font-size: var(--font-size-h4);
@@ -218,14 +251,22 @@ main h3 {
   color: var(--color-primary);
 }
 
-article section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+@media (min-width: 35rem) {
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+}
+article #about {
+  grid-row: 1/2;
+  grid-column: 1/3;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+article #files {
+  grid-row: 2/3;
+  grid-column: 1/3;
 }
 
 article .container,
@@ -292,25 +333,123 @@ nav ul {
   padding: 0;
   list-style: none;
 }
+nav ul li {
+  margin: 0.25rem;
+}
+nav ul li:nth-child(1) a::before {
+  margin-bottom: 0.6em;
+  border-top: 50px solid transparent;
+  border-right: 100px solid pink;
+  border-bottom: 50px 20px solid transparent;
+  box-shadow: 8px 8px 8px black;
+}
+nav ul li:nth-child(2) a::before {
+  width: 0px;
+  height: 0px;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  margin-left: 1.7em;
+  border-left: 50px 20px solid #ffe451;
+  border-bottom: 50px solid #ffe451;
+  border-left: 3px solid #ffe451;
+  border-right: 50px solid #ffe451;
+  box-shadow: 8px 8px 8px black;
+}
+nav ul li:nth-child(3) a::before {
+  width: 0px;
+  height: 0px;
+  margin-top: 0.4em;
+  margin-left: 1.6em;
+  margin-bottom: 0.6em;
+  border-right: 25px solid #f07e66;
+  border-top: 25px solid #f07e66;
+  border-left: 25px solid #f07e66;
+  border-bottom: 25px solid #f07e66;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  box-shadow: 5px 5px 5px black;
+}
+nav ul li:nth-child(4) a::before {
+  width: 0px;
+  height: 0px;
+  margin-top: 1.3em;
+  margin-bottom: 0.6em;
+  border-right: 25px solid #fc78ac;
+  border-top: 35px solid #fc78ac;
+  border-left: 25px solid #fc78ac;
+  border-bottom: 35px solid #2dd2cb;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 90px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  box-shadow: 5px 5px 5px black;
+}
+nav ul li:nth-child(5) a::before {
+  width: 0px;
+  height: 0px;
+  margin-left: 1.6em;
+  margin-bottom: 0.6em;
+  border-bottom: 80px solid orange;
+  border-left: 50px solid transparent;
+  border-right: 3px solid transparent;
+  box-shadow: 8px 8px 8px black;
+  box-shadow: 8px 8px 8px black;
+}
+nav ul li:nth-child(6) a::before {
+  width: 0px;
+  height: 0px;
+  margin-left: 1.7em;
+  margin-bottom: 1em;
+  border-right: 25px 25px solid #fc78ac;
+  border-top: 35px solid #fc78ac;
+  border-left: 25px solid #fc78ac;
+  border-bottom: 25px solid #fc78ac;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: transparent;
+  box-shadow: 5px 5px 5px black;
+}
+nav ul li:nth-child(1) a {
+  color: pink;
+}
+nav ul li:nth-child(2) a {
+  color: yellow;
+}
+nav ul li:nth-child(3) a {
+  color: #f07e66;
+}
+nav ul li:nth-child(4) a {
+  color: #2dd2cb;
+}
+nav ul li:nth-child(5) a {
+  color: orange;
+}
+nav ul li:nth-child(6) a {
+  color: violet;
+}
 nav ul a {
   display: inline-grid;
   padding: 0.5rem;
-  color: var(--color-secondary);
   font-size: 1.25rem;
   text-decoration: none;
+}
+nav ul a:nth-child(1)::before {
+  color: pink;
+}
+nav ul a:nth-child(2)::before {
+  color: yellow;
 }
 nav ul a::before {
   width: 100%;
   height: 0.33em;
-  background-color: var(--color-secondary);
-  opacity: 0.15;
+  opacity: 100;
   content: "";
 }
 nav ul a:hover::before, nav ul a:focus::before {
-  opacity: 1;
-}
-nav ul li {
-  margin: 0.25rem;
+  opacity: 11;
 }
 
 #about section:nth-child(2) {
@@ -475,10 +614,6 @@ nav ul li {
   position: relative;
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
-  /*! 
-    * SVGs from Hero Patterns
-    * @link http://www.heropatterns.com/
-    */
 }
 .features li {
   display: grid;
@@ -519,6 +654,8 @@ nav ul li {
 #styles {
   margin: 5vh 0 20vh;
   text-align: center;
+  background-color: #000;
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 35px, rgb(255, 255, 255) 35px, rgb(255, 255, 255) 70px);
 }
 #styles h2 {
   color: var(--color-text);
@@ -546,16 +683,15 @@ nav ul li {
 #styles .features::after,
 .features.patterned::after {
   position: absolute;
-  bottom: -4.5em;
+  bottom: -2.5em;
   width: 10ch;
-  padding-top: 3em;
+  padding-top: 1em;
   transform: rotate(-15deg);
   transform-origin: bottom right;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 199.1 111.3'%3E%3Cpath fill='%23ffe451' d='M118 77a77 77 0 00-2-18c-2-4-3-9-3-13a29 29 0 011-12 19 19 0 017-9c4-3 8-4 13-3a14 14 0 018 7 31 31 0 012 5 75 75 0 005 10 47 47 0 002 5 17 17 0 003 3c4 4 8 4 13 0a15 15 0 005-8 37 37 0 001-7l1-11a18 18 0 014-11 2 2 0 000-3l-3-3-2-3a2 2 0 011-2 11 11 0 012-1l19-3c4 0 5 1 3 5l-7 16c-1 3-2 3-5 1l-4-5a1 1 0 00-1 0 9 9 0 00-3 5 23 23 0 00-1 6l-1 11a26 26 0 01-1 7 18 18 0 01-8 10c-5 3-9 3-13 0a20 20 0 01-6-6 68 68 0 01-6-13l-2-4a18 18 0 00-2-4 10 10 0 00-14-2 15 15 0 00-4 4 19 19 0 00-3 9 32 32 0 000 11l2 6a78 78 0 012 27 32 32 0 01-4 15 24 24 0 01-11 9 33 33 0 01-19 3 16 16 0 01-13-9 29 29 0 01-3-11 70 70 0 012-18l2-14a33 33 0 000-14c-1-4-4-7-8-7-7-1-14 1-19 6a34 34 0 00-6 9 59 59 0 00-4 10l-3 12-2 6a26 26 0 01-5 8 17 17 0 01-16 6 26 26 0 01-10-4 7 7 0 01-2-1 2 2 0 010-2 2 2 0 012 0l3 1a22 22 0 0010 3 13 13 0 009-4 22 22 0 005-6 41 41 0 003-8l3-12a59 59 0 015-13 31 31 0 017-9c6-5 14-7 22-5a12 12 0 019 7 21 21 0 011 7 57 57 0 01-2 17 132 132 0 00-2 16 37 37 0 000 13 27 27 0 002 5 13 13 0 0011 8 30 30 0 0016-3 22 22 0 0010-10c3-4 3-9 4-13v-5z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-size: 90%;
+  background-size: 50%;
   color: var(--color-secondary);
-  font-size: 0.9rem;
+  font-size: 2rem;
+  text-shadow: 3px 2px #000, 4px 3px #ffe451, 5px 5px #f07e66, 6px 6px #fff;
   content: "Grid FTW!";
 }
 
@@ -568,7 +704,7 @@ nav ul li {
 }
 .profile h4 {
   margin: 0;
-  color: var(--color-secondary);
+  color: var(--color-background);
   text-align: center;
 }
 .profile .container {
@@ -579,7 +715,7 @@ nav ul li {
 .profile .container > a {
   min-height: 2em;
   border: 2px solid currentColor;
-  color: var(--color-secondary);
+  color: var(--color-background);
 }
 .profile ul {
   display: flex;
@@ -637,7 +773,6 @@ nav ul li {
   background-position: center -34px;
   color: var(--color-light);
   background-color: #000;
-  background-image: repeating-linear-gradient(-45deg, transparent, transparent 35px, rgb(255, 255, 255) 35px, rgb(255, 255, 255) 70px);
 }
 .page-footer::before {
   display: inline-grid;
@@ -680,6 +815,7 @@ nav ul li {
   background-color: var(--color-secondary);
   color: #fff;
   font-size: 1.125rem;
+  text-transform: uppercase;
   overflow: hidden;
 }
 .skip-link:focus {
@@ -710,6 +846,7 @@ nav ul li {
   line-height: 1;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
 }
 [class^=link]:not(.link-codepen):hover, [class^=link]:not(.link-codepen):focus,
 .profile .container > a:hover,
@@ -745,6 +882,7 @@ nav ul li {
   background-size: 14%;
   color: #6f6ffd;
   font-size: 0.85em;
+  text-transform: uppercase;
   content: "Jump right in";
 }
 
