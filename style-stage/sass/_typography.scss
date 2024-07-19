@@ -43,7 +43,7 @@ h2 {
     background-color: orange;
   }
   #main h2:nth-child(6) {
-    background-color: #fc78ac;
+    background-color: var(--color-primary-yellow);
   }
 
 h3 {

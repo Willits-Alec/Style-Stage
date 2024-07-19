@@ -1,21 +1,27 @@
-$color-primary: #fc78ac !default;
-$color-primary-alt: #ffe451 !default;
-$color-secondary: #2dd2cb !default;
-$color-background: #4350c6d8 !default;
-$color-text: #000 !default;
-$color-light: #ef9da3 !default;
+$color-primary: #fee57c !default;
+$color-primary-alt: #ffdeda !default;
+$color-teal: #39fef6 !default;
+$color-secondary-pink: #fdcaef !default;
+$color-orange: #f77519 !default;
+$color-background: #27337d !default;
+$color-background-alt: #4557bf !default;
+$color-peach: #fda798 !default;
+$color-pink-alt: #fd89cf !default;
+$color-white: #fff !default;
+$color-black: #000 !default;
+$color-teal-alt: #39fef6 !default;
+$color-text: #fff !default;
 $color-anchor: #fff !default;
-$color-orange: #f07e66 !default;
 
 $brand-colors: (
   primary: $color-primary,
   primary-alt: $color-primary-alt,
-  secondary: $color-secondary,
+  secondary: $color-teal,
 ) !default;
 
 $color-body:$color-background;
 // $color-body: scale-color(
-//   $color-primary,
+//   $color-primary-yellow,
 //   // $lightness: -30%,
 // //   // $saturation: -50%
 // ) !default;
@@ -31,7 +37,7 @@ $colors: map-merge(
 );
 
 $anchor-colors: (
-  a: $color-anchor
+  a: $color-primary-alt
 );
 
 @function color($key) {

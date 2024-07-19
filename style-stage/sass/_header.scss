@@ -1,5 +1,5 @@
 header {
-  --logomark-height: 3em;
+  --logomark-height: 2.3em;
   --logomark-padding: 0 1em;
 
   display: grid;
@@ -7,7 +7,7 @@ header {
   place-items: center;
   padding: 10vh 2rem;
   background-repeat: repeat-x;
-  background-position: 0 -38px, 20px -50px;
+  background-position: 0 -38px, 20px -48px;
   color: var(--color-primary-alt);
   text-align: center;
   background-color: #000;
@@ -18,46 +18,47 @@ header {
 
   h1 {
     //@include logomark;
-    background-color: #4350c6;
-    font-size: 150px;
-    //margin-top: .4em;
-    //margin-left: 1.6em;
-    //margin-bottom: .6em;
-    border-right: 25px solid violet;
-    border-top: 50px solid red;
-    border-left: 25px solid #f07e66;
-    border-bottom: 35px solid #2dd2cb;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 40px;
-    border-bottom-left-radius: 90px;
-    border-bottom-right-radius: 60px;
+    color: #fee57c;
+    font-size: 155px;
+    text-shadow: 2px 2px #000;
+    width: 9em;
+    height: 1.3em;
+    -webkit-transform: skew(18deg);
+    -moz-transform: skew(18deg);
+    -o-transform: skew(18deg);
+    background: #4556be;
     box-shadow: 8px 8px 8px black;
   }
 
   h2 {
-    max-width: 30ch;
-    color: orange;
-    background-color: #000;
-    //text-shadow: 3px 2px white;
-    margin-top: 1.4em;
-    margin-left: 1.6em;
-    margin-bottom: .6em;
-    // border-top: 25px solid #2dd2cb;
-    // border-right: 10px solid #f07e66;
-    // border-left: 25px solid red;
-    // border-bottom: 15px solid  violet;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 40px;
-    border-bottom-left-radius: 90px;
-    border-bottom-right-radius: 60px;
-    box-shadow: -8px 8px white;
+    max-width: 38ch;
+    color: #4556be;
+    background-color: #fee57c;
+    //text-align: center;
+    text-shadow: 2px 2px #fff;
+    //margin-top: 1.4em;
+    //margin-right: 2.6em;
+    //margin-bottom: .6em;
+    //width: 29em;
+    height: 2.5em;
+    -webkit-transform: skew(-18deg);
+    -moz-transform: skew(-18deg);
+    -o-transform: skew(-18deg);
+    box-shadow: -8px 8px 8px #000;
   }
   
   p{
-    background-color: #f07e66;
+    background-color: #f77519;
     color: #000;
+    //width: 30em;
+    height: 2em;
+    -webkit-transform: skew(18deg);
+    -moz-transform: skew(18deg);
+    -o-transform: skew(18deg);
+    box-shadow: 8px 8px 8px black;
+    object-position: center;
   }
   a {
-    color: #2dd2cb;
+    color: #27337d;
   }
 }
