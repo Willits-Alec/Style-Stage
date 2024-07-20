@@ -27,28 +27,10 @@ h2 {
   color: var(--color-background);
   padding: 0.25em 0.5em;
   -webkit-transform: skew(18deg);
-    -moz-transform: skew(18deg);
-    -o-transform: skew(18deg);
-    //background: #4556be;
-    box-shadow: 8px 8px 8px #fff;
-}
-  h2:nth-child(1) {
-     background: #fff;
-  }
-h2:nth-child(2) {
-    background: #fee57c;
-}
-h2:nth-child(3) {
-       background: #f77519;
-     }
-     h2:nth-child(4) {
-       background: #39fef6;
-     }
-     h2:nth-child(5) {
-      background: #fda798;
-     }
-h2:nth-child(6) {
-       background: #fc78ac;
+  -moz-transform: skew(18deg);
+  -o-transform: skew(18deg);
+  background: #4556be;
+  box-shadow: 8px 8px 8px #000;
 }
 
 h3 {
@@ -154,7 +136,7 @@ blockquote {
   background-color: #ffe451;
 }
 #contribute {
-  background-color: orange;
+  background-color: #f77519;
 }
 
 #guidelines,

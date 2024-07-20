@@ -163,31 +163,8 @@ h2 {
   -webkit-transform: skew(18deg);
   -moz-transform: skew(18deg);
   -o-transform: skew(18deg);
-  box-shadow: 8px 8px 8px #fff;
-}
-
-h2:nth-child(1) {
-  background: #fff;
-}
-
-h2:nth-child(2) {
-  background: #fee57c;
-}
-
-h2:nth-child(3) {
-  background: #f77519;
-}
-
-h2:nth-child(4) {
-  background: #39fef6;
-}
-
-h2:nth-child(5) {
-  background: #fda798;
-}
-
-h2:nth-child(6) {
-  background: #fc78ac;
+  background: #4556be;
+  box-shadow: 8px 8px 8px #000;
 }
 
 h3 {
@@ -283,7 +260,7 @@ blockquote::after {
 }
 
 #contribute {
-  background-color: orange;
+  background-color: #f77519;
 }
 
 #guidelines p:nth-of-type(1),
@@ -472,6 +449,18 @@ nav ul a:hover::before, nav ul a:focus::before {
   opacity: 11;
 }
 
+#about h2 {
+  background-color: var(--color-secondary);
+  align-self: center;
+  color: #4557bf;
+  text-shadow: 2px 2px #f77519;
+  padding: 0.25em 0.5em;
+  -webkit-transform: skew(-18deg);
+  -moz-transform: skew(-18deg);
+  -o-transform: skew(-18deg);
+  background: #fff;
+  box-shadow: 8px 8px 2px #f77519;
+}
 #about section:nth-child(2) {
   display: flex;
   flex-direction: column;
@@ -504,6 +493,18 @@ nav ul a:hover::before, nav ul a:focus::before {
   }
 }
 
+#guidelines h2 {
+  background-color: var(--color-secondary);
+  align-self: center;
+  color: #fee57c;
+  text-shadow: 2px 2px #000;
+  padding: 0.25em 0.5em;
+  -webkit-transform: skew(18deg);
+  -moz-transform: skew(18deg);
+  -o-transform: skew(18deg);
+  background: #4556be;
+  box-shadow: 8px 8px 8px #000;
+}
 #guidelines h3 {
   display: inline-block;
   transform: rotate(-8deg) translateX(-10%);
@@ -513,6 +514,12 @@ nav ul a:hover::before, nav ul a:focus::before {
   #guidelines h3 {
     transform: rotate(-8deg) translateX(-30%);
   }
+}
+#guidelines p {
+  color: #27337d;
+}
+#guidelines a {
+  color: #f77519;
 }
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   #guidelines p:nth-of-type(2) {
@@ -526,7 +533,7 @@ nav ul a:hover::before, nav ul a:focus::before {
     transform-origin: left center;
     -webkit-background-clip: text;
     background-clip: text;
-    color: #27337d;
+    color: #000;
     font-size: 0.9em;
     font-weight: normal;
     content: "← Whoa, text gradients!";
@@ -534,6 +541,19 @@ nav ul a:hover::before, nav ul a:focus::before {
 }
 #guidelines .container > a {
   align-self: center;
+}
+
+#contribute h2 {
+  background-color: var(--color-secondary);
+  align-self: center;
+  color: #f77519;
+  text-shadow: 2px 2px #000;
+  padding: 0.25em 0.5em;
+  -webkit-transform: skew(-18deg);
+  -moz-transform: skew(-18deg);
+  -o-transform: skew(-18deg);
+  background: #4556be;
+  box-shadow: 8px 8px 8px #000;
 }
 
 #files {

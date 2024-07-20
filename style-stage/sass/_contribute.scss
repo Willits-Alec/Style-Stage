@@ -34,3 +34,17 @@
     // @media (max-width: 35rem) {
     //   #about section:nth-child(2)::before {
     //     transform: scale(2) translate(-25%, -25%); } }
+#contribute {
+    h2 {
+      background-color: var(--color-secondary);
+      align-self: center;
+      color: #f77519;
+      text-shadow: 2px 2px #000;
+      padding: 0.25em 0.5em;
+      -webkit-transform: skew(-18deg);
+      -moz-transform: skew(-18deg);
+      -o-transform: skew(-18deg);
+      background: #4556be;
+      box-shadow: 8px 8px 8px #000;
+      }
+  }

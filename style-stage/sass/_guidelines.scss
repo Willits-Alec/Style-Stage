@@ -1,4 +1,16 @@
 #guidelines {
+  h2 {
+  background-color: var(--color-secondary);
+  align-self: center;
+  color: #fee57c;
+  text-shadow: 2px 2px #000;
+  padding: 0.25em 0.5em;
+  -webkit-transform: skew(18deg);
+  -moz-transform: skew(18deg);
+  -o-transform: skew(18deg);
+  background: #4556be;
+  box-shadow: 8px 8px 8px #000;
+  }
   h3 {
     display: inline-block;
     transform: rotate(-8deg) translateX(-10%);
@@ -15,6 +27,12 @@
     }
   }
 
+  p {
+    color: #27337d;
+  }
+a {
+  color: #f77519;
+}
   @supports (background-clip: text) or (-webkit-background-clip: text) {
     p:nth-of-type(2) {
       position: relative;
@@ -27,7 +45,7 @@
         transform-origin: left center;
         -webkit-background-clip: text;
         background-clip: text;
-        color: #27337d;
+        color: #000;
         font-size: 0.9em;
         font-weight: normal;
         content: "← Whoa, text gradients!";
