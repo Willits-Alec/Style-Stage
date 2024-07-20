@@ -10,7 +10,9 @@
     place-content: center;
     min-height: 12rem;
     padding: 2rem 2em auto;
-    color: #27337d;
+    color: #4557bf;
+    font-family: "FontDiner Swanky", decorative;
+    // text-transform: uppercase;
     text-align: center;
 
     > span {
@@ -18,8 +20,8 @@
       place-content: center;
       padding: .5em;
       grid-gap: 1em;
-      border: 1px solid var(--color-light);
-      background-color: var(--color-secondary);
+      //border: 1px solid var(--color-light);
+      //background-color: var(--color-secondary);
       line-height: 1.1;
 
       a {
