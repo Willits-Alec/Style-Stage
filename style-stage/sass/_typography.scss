@@ -18,7 +18,7 @@ h2 {
   font-size: var(--font-size-h2);
   font-size: clamp(2rem, 4vw, var(--font-size-h2));
   text-align: center;
-  font-family: "FontDiner Swanky", decorative;
+  font-family: "Akaya Kanadaka", decorative;
 }
 
 h2 {
@@ -35,6 +35,7 @@ h2 {
 
 h3 {
   font-size: var(--font-size-h3);
+  font-family: "Akaya Kanadaka", decorative;
 }
 
 h4 {
@@ -96,6 +97,7 @@ blockquote {
     font-size: var(--font-size-h4);
     margin-bottom: 0;
     padding: 0.5em;
+    font-family: "Roboto", sans-serif;
 
     strong {
       font-size: 1.15em;

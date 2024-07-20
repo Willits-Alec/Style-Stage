@@ -37,6 +37,10 @@
     font-weight: 800;
   }
 
+// .container a.guidelines {
+//   border-radius: 2px black;
+// }
+
   @supports (background-clip: text) or (-webkit-background-clip: text) {
     p:nth-of-type(2) {
       position: relative;
@@ -60,5 +64,8 @@
   .container > a {
     align-self: center;
     color: #27337d;
+    background-color: #ffdeda;
+    border-radius: 2px 2px black;
+    filter: drop-shadow(2px 2px black);
   }
 }
