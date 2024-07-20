@@ -18,36 +18,24 @@ h2 {
   font-size: var(--font-size-h2);
   font-size: clamp(2rem, 4vw, var(--font-size-h2));
   text-align: center;
-  font-family: "FontDiner Swanky", decorative;
+  font-family: "Akaya Kanadaka", decorative;
 }
 
-#main h2 {
+h2 {
   background-color: var(--color-secondary);
   align-self: center;
   color: var(--color-background);
   padding: 0.25em 0.5em;
+  -webkit-transform: skew(18deg);
+  -moz-transform: skew(18deg);
+  -o-transform: skew(18deg);
+  background: #4556be;
+  box-shadow: 8px 8px 8px #000;
 }
-  #main h2:nth-child(1) {
-   background-color: pink;
-  }
-  #main h2:nth-child(2) {
-    background-color: #ffe451;
-  }
-  #main h2:nth-child(3) {
-    background-color: #f07e66;
-  }
-  #main h2:nth-child(4) {
-    background-color: #2dd2cb;
-  }
-  #main h2:nth-child(5) {
-    background-color: orange;
-  }
-  #main h2:nth-child(6) {
-    background-color: #fc78ac;
-  }
 
 h3 {
   font-size: var(--font-size-h3);
+  font-family: "Akaya Kanadaka", decorative;
 }
 
 h4 {
@@ -109,6 +97,7 @@ blockquote {
     font-size: var(--font-size-h4);
     margin-bottom: 0;
     padding: 0.5em;
+    font-family: "Roboto", sans-serif;
 
     strong {
       font-size: 1.15em;
@@ -149,7 +138,7 @@ blockquote {
   background-color: #ffe451;
 }
 #contribute {
-  background-color: orange;
+  background-color: #f77519;
 }
 
 #guidelines,

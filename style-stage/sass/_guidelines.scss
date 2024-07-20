@@ -1,19 +1,45 @@
 #guidelines {
+  background-color: #fee57c;
+  h2 {
+  background-color: var(--color-secondary);
+  align-self: center;
+  color: #fee57c;
+  text-shadow: 2px 2px #000;
+  padding: 0.25em 0.5em;
+  -webkit-transform: skew(18deg);
+  -moz-transform: skew(18deg);
+  -o-transform: skew(18deg);
+  background: #4556be;
+  box-shadow: 8px 8px 8px #000;
+  }
   h3 {
     display: inline-block;
     transform: rotate(-8deg) translateX(-10%);
-    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    background: linear-gradient(to right, #f77519, #39fef6, #fd89cf);
 
-    @supports (background-clip: text) or (-webkit-background-clip: text) {
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
+    // @supports (background-clip: text) or (-webkit-background-clip: text) {
+    //   -webkit-background-clip: text;
+    //   background-clip: text;
+    //   color: transparent;
+    // }
 
     @media (min-width: 120ch) {
       transform: rotate(-8deg) translateX(-30%);
     }
   }
+
+  p {
+    color: #27337d;
+  }
+
+  a {
+    color: #000;
+    font-weight: 800;
+  }
+
+// .container a.guidelines {
+//   border-radius: 2px black;
+// }
 
   @supports (background-clip: text) or (-webkit-background-clip: text) {
     p:nth-of-type(2) {
@@ -27,7 +53,7 @@
         transform-origin: left center;
         -webkit-background-clip: text;
         background-clip: text;
-        color: var(--color-primary-alt);
+        color: #000;
         font-size: 0.9em;
         font-weight: normal;
         content: "← Whoa, text gradients!";
@@ -37,5 +63,9 @@
 
   .container > a {
     align-self: center;
+    color: #27337d;
+    background-color: #ffdeda;
+    border-radius: 2px 2px black;
+    filter: drop-shadow(2px 2px black);
   }
 }
