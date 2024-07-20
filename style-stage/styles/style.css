@@ -6,7 +6,7 @@
   --color-primary-alt: #ffdeda;
   --color-secondary: #39fef6;
   --color-background: #27337d;
-  --color-text: #fff;
+  --color-text: #ffdeda;
   --color-light: #fff;
   --color-anchor: #fff;
   --font-family: "Baloo 2", sans-serif;
@@ -46,7 +46,7 @@ main h3 {
 article #about {
   grid-row: 1/2;
   grid-column: 1/3;
-  background-color: #f0f0f0;
+  background-color: #fff;
   padding: 20px;
 }
 article #files {
@@ -100,12 +100,18 @@ h6 {
   margin: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 /* Set core body defaults */
 body {
   min-height: 100vh;
   font-size: 100%;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  background: var(#27337d);
 }
 
 /* Make images easier to work with */
@@ -149,35 +155,39 @@ h2 {
   font-family: "FontDiner Swanky", decorative;
 }
 
-#main h2 {
+h2 {
   background-color: var(--color-secondary);
   align-self: center;
   color: var(--color-background);
   padding: 0.25em 0.5em;
+  -webkit-transform: skew(18deg);
+  -moz-transform: skew(18deg);
+  -o-transform: skew(18deg);
+  box-shadow: 8px 8px 8px #fff;
 }
 
-#main h2:nth-child(1) {
-  background-color: pink;
+h2:nth-child(1) {
+  background: #fff;
 }
 
-#main h2:nth-child(2) {
-  background-color: #ffe451;
+h2:nth-child(2) {
+  background: #fee57c;
 }
 
-#main h2:nth-child(3) {
-  background-color: #f07e66;
+h2:nth-child(3) {
+  background: #f77519;
 }
 
-#main h2:nth-child(4) {
-  background-color: #2dd2cb;
+h2:nth-child(4) {
+  background: #39fef6;
 }
 
-#main h2:nth-child(5) {
-  background-color: orange;
+h2:nth-child(5) {
+  background: #fda798;
 }
 
-#main h2:nth-child(6) {
-  background-color: var(--color-primary-yellow);
+h2:nth-child(6) {
+  background: #fc78ac;
 }
 
 h3 {
@@ -297,6 +307,7 @@ header {
   background-image: repeating-linear-gradient(-45deg, transparent, transparent 35px, rgb(255, 255, 255) 35px, rgb(255, 255, 255) 70px);
 }
 header h1 {
+  padding: 0.2em 0.2em;
   color: #fee57c;
   font-size: 155px;
   text-shadow: 2px 2px #000;
@@ -309,7 +320,7 @@ header h1 {
   box-shadow: 8px 8px 8px black;
 }
 header h2 {
-  max-width: 38ch;
+  max-width: 40ch;
   color: #4556be;
   background-color: #fee57c;
   text-shadow: 2px 2px #fff;
@@ -322,6 +333,7 @@ header h2 {
 header p {
   background-color: #f77519;
   color: #000;
+  padding: 0.2em 0.2em;
   height: 2em;
   -webkit-transform: skew(18deg);
   -moz-transform: skew(18deg);
@@ -347,7 +359,7 @@ nav ul li {
 nav ul li:nth-child(1) a::before {
   margin-bottom: 0.6em;
   border-top: 50px solid transparent;
-  border-right: 100px solid pink;
+  border-right: 100px solid #fff;
   border-bottom: 50px 20px solid transparent;
   box-shadow: 8px 8px 8px black;
 }
@@ -357,10 +369,10 @@ nav ul li:nth-child(2) a::before {
   margin-top: 1.5em;
   margin-bottom: 0.5em;
   margin-left: 1.7em;
-  border-left: 50px 20px solid #ffe451;
-  border-bottom: 50px solid #ffe451;
-  border-left: 3px solid #ffe451;
-  border-right: 50px solid #ffe451;
+  border-left: 50px 20px solid #fee57c;
+  border-bottom: 50px solid #fee57c;
+  border-left: 3px solid #fee57c;
+  border-right: 50px solid #fee57c;
   box-shadow: 8px 8px 8px black;
 }
 nav ul li:nth-child(3) a::before {
@@ -369,10 +381,10 @@ nav ul li:nth-child(3) a::before {
   margin-top: 0.4em;
   margin-left: 1.6em;
   margin-bottom: 0.6em;
-  border-right: 25px solid #f07e66;
-  border-top: 25px solid #f07e66;
-  border-left: 25px solid #f07e66;
-  border-bottom: 25px solid #f07e66;
+  border-right: 25px solid #f77519;
+  border-top: 25px solid #f77519;
+  border-left: 25px solid #f77519;
+  border-bottom: 25px solid #f77519;
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
   border-bottom-left-radius: 60px;
@@ -385,9 +397,9 @@ nav ul li:nth-child(4) a::before {
   margin-top: 1.3em;
   margin-bottom: 0.6em;
   border-right: 25px solid var(--color-primary-yellow);
-  border-top: 35px solid #fc78ac;
-  border-left: 25px solid #fc78ac;
-  border-bottom: 35px solid #2dd2cb;
+  border-top: 55px solid #39fef6;
+  border-left: 55px solid #39fef6;
+  border-bottom: 35px solid #39fef6;
   border-top-left-radius: 60px;
   border-top-right-radius: 90px;
   border-bottom-left-radius: 60px;
@@ -399,7 +411,7 @@ nav ul li:nth-child(5) a::before {
   height: 0px;
   margin-left: 1.6em;
   margin-bottom: 0.6em;
-  border-bottom: 80px solid orange;
+  border-bottom: 80px solid #fda798;
   border-left: 50px solid transparent;
   border-right: 3px solid transparent;
   box-shadow: 8px 8px 8px black;
@@ -410,10 +422,10 @@ nav ul li:nth-child(6) a::before {
   height: 0px;
   margin-left: 1.7em;
   margin-bottom: 1em;
-  border-right: 25px 25px solid #fc78ac;
+  border-right: 25px solid #f77519;
   border-top: 35px solid #fc78ac;
-  border-left: 25px solid #fc78ac;
-  border-bottom: 25px solid #fc78ac;
+  border-left: 25px solid #2dd2cb;
+  border-bottom: 25px solid #fda798;
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
   border-bottom-left-radius: 60px;
@@ -421,22 +433,22 @@ nav ul li:nth-child(6) a::before {
   box-shadow: 5px 5px 5px black;
 }
 nav ul li:nth-child(1) a {
-  color: pink;
+  color: #fff;
 }
 nav ul li:nth-child(2) a {
-  color: yellow;
+  color: #fee57c;
 }
 nav ul li:nth-child(3) a {
-  color: #f07e66;
+  color: #f77519;
 }
 nav ul li:nth-child(4) a {
-  color: #2dd2cb;
+  color: #39fef6;
 }
 nav ul li:nth-child(5) a {
-  color: orange;
+  color: #fda798;
 }
 nav ul li:nth-child(6) a {
-  color: violet;
+  color: #fc78ac;
 }
 nav ul a {
   display: inline-grid;
@@ -448,7 +460,7 @@ nav ul a:nth-child(1)::before {
   color: pink;
 }
 nav ul a:nth-child(2)::before {
-  color: yellow;
+  color: #fee57c;
 }
 nav ul a::before {
   width: 100%;
@@ -471,8 +483,6 @@ nav ul a:hover::before, nav ul a:focus::before {
 #about section:nth-child(2) p:nth-of-type(2) {
   align-self: center;
   margin-top: 2rem;
-  color: var(--color-secondary);
-  font-size: 1.5em;
   font-weight: var(--font-weight-strong);
   text-align: center;
 }
@@ -487,7 +497,6 @@ nav ul a:hover::before, nav ul a:focus::before {
 #about section:nth-child(2) ul li {
   margin: 0.25em;
   padding: 0.25em 0.5em;
-  background: var(--color-light);
 }
 @media (max-width: 35rem) {
   #about section:nth-child(2)::before {
@@ -498,14 +507,7 @@ nav ul a:hover::before, nav ul a:focus::before {
 #guidelines h3 {
   display: inline-block;
   transform: rotate(-8deg) translateX(-10%);
-  background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
-}
-@supports (background-clip: text) or (-webkit-background-clip: text) {
-  #guidelines h3 {
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
+  background: linear-gradient(to right, #f77519, #39fef6, #fd89cf);
 }
 @media (min-width: 120ch) {
   #guidelines h3 {
@@ -524,7 +526,7 @@ nav ul a:hover::before, nav ul a:focus::before {
     transform-origin: left center;
     -webkit-background-clip: text;
     background-clip: text;
-    color: var(--color-primary-alt);
+    color: #27337d;
     font-size: 0.9em;
     font-weight: normal;
     content: "← Whoa, text gradients!";

@@ -10,11 +10,15 @@
     p:nth-of-type(2) {
       align-self: center;
       margin-top: 2rem;
-      color: var(--color-secondary);
-      font-size: 1.5em;
+      //color: #ffdeda;
+      //font-size: 1.5em;
       font-weight: var(--font-weight-strong);
       text-align: center;
     }
+
+    // h3 {
+    //   background-color: #ffdeda;
+    // }
 
     ul {
       display: flex;
@@ -27,7 +31,8 @@
       li {
         margin: 0.25em;
         padding: 0.25em 0.5em;
-        background: var(--color-light);
+        //background: var(--color-light);
+        :hover {}
       }
     }
 

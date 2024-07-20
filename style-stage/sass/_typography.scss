@@ -21,30 +21,35 @@ h2 {
   font-family: "FontDiner Swanky", decorative;
 }
 
-#main h2 {
+h2 {
   background-color: var(--color-secondary);
   align-self: center;
   color: var(--color-background);
   padding: 0.25em 0.5em;
+  -webkit-transform: skew(18deg);
+    -moz-transform: skew(18deg);
+    -o-transform: skew(18deg);
+    //background: #4556be;
+    box-shadow: 8px 8px 8px #fff;
 }
-  #main h2:nth-child(1) {
-   background-color: pink;
+  h2:nth-child(1) {
+     background: #fff;
   }
-  #main h2:nth-child(2) {
-    background-color: #ffe451;
-  }
-  #main h2:nth-child(3) {
-    background-color: #f07e66;
-  }
-  #main h2:nth-child(4) {
-    background-color: #2dd2cb;
-  }
-  #main h2:nth-child(5) {
-    background-color: orange;
-  }
-  #main h2:nth-child(6) {
-    background-color: var(--color-primary-yellow);
-  }
+h2:nth-child(2) {
+    background: #fee57c;
+}
+h2:nth-child(3) {
+       background: #f77519;
+     }
+     h2:nth-child(4) {
+       background: #39fef6;
+     }
+     h2:nth-child(5) {
+      background: #fda798;
+     }
+h2:nth-child(6) {
+       background: #fc78ac;
+}
 
 h3 {
   font-size: var(--font-size-h3);
