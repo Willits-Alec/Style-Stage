@@ -332,6 +332,7 @@ nav ul {
 }
 nav ul li {
   margin: 0.25rem;
+  text-shadow: 3px 3px #000;
 }
 nav ul li:nth-child(1) a::before {
   margin-bottom: 0.6em;
@@ -521,9 +522,6 @@ nav ul a:hover::before, nav ul a:focus::before {
 #guidelines p {
   color: #27337d;
 }
-#guidelines a {
-  color: #f77519;
-}
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   #guidelines p:nth-of-type(2) {
     position: relative;
@@ -544,6 +542,7 @@ nav ul a:hover::before, nav ul a:focus::before {
 }
 #guidelines .container > a {
   align-self: center;
+  color: #27337d;
 }
 
 #contribute h2 {
@@ -759,21 +758,25 @@ nav ul a:hover::before, nav ul a:focus::before {
   --logomark-padding: 0;
   position: relative;
   padding: 3rem 1rem;
-  background-color: var(--color-primary-yellow);
-  color: var(--color-light);
-  background-color: #000;
+  background-color: #4557bf;
+  color: #000;
+  background-color: #2dd2cb;
 }
 .page-footer::before {
+  display: inline-grid;
+  min-height: var(--logomark-height);
+  padding: var(--logomark-padding);
+  border: 0.16em solid var(--color-text);
+  box-shadow: -0.15em -0.19em #fd89cf;
+  place-content: center;
   position: absolute;
   left: 50%;
   width: 2em;
-  border-top-left-radius: 60px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
-  box-shadow: 5px 5px 5px #ffe451;
-  background-color: #fff;
-  color: orange;
+  transform: translate(-50%, -100%);
+  border-radius: 50px;
+  box-shadow: 5px 5px #000;
+  background-color: #f77519;
+  color: #000;
   font-size: 3rem;
   content: "S";
 }
@@ -799,8 +802,8 @@ nav ul a:hover::before, nav ul a:focus::before {
   left: -10000px;
   width: 1px;
   height: 1px;
-  background-color: var(--color-secondary);
-  color: #fff;
+  background-color: green;
+  color: green;
   font-size: 1.125rem;
   text-transform: uppercase;
   overflow: hidden;
@@ -811,14 +814,21 @@ nav ul a:hover::before, nav ul a:focus::before {
   left: 0;
   width: auto;
   height: auto;
-  padding: 0.5em;
+  padding: 1em;
 }
 
 [class^=link]:not(.link-codepen) {
-  min-height: 3em;
-  background-color: var(--color-text);
-  color: #fff;
-  box-shadow: 0.2em 0.19em var(--color-secondary), -0.15em -0.19em var(--color-primary-alt);
+  min-height: 5em;
+  width: 190px;
+  height: 90px;
+  background: var(--color-primary);
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  box-shadow: -8px 8px 28px #000;
+  margin-top: 20px;
+  color: #27337d;
+  font-size: 5em;
+  font-weight: 600;
 }
 
 [class^=link]:not(.link-codepen),
@@ -851,7 +861,7 @@ nav ul a:hover::before, nav ul a:focus::before {
   width: 100%;
   min-height: 2.5em;
   background-color: var(--color-background);
-  color: var(--color-primary);
+  color: #39fef6;
 }
 
 .link-codepen {

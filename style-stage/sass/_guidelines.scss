@@ -31,9 +31,7 @@
   p {
     color: #27337d;
   }
-a {
-  color: #f77519;
-}
+
   @supports (background-clip: text) or (-webkit-background-clip: text) {
     p:nth-of-type(2) {
       position: relative;
@@ -56,5 +54,6 @@ a {
 
   .container > a {
     align-self: center;
+    color: #27337d;
   }
 }

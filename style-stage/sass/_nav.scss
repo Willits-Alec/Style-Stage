@@ -9,7 +9,7 @@ nav {
 
     li {
       margin: 0.25rem;
-      
+      text-shadow: 3px 3px #000;
       &:nth-child(1) a::before {
       margin-bottom: .6em;
       border-top: 50px solid transparent;
