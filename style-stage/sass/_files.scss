@@ -13,14 +13,10 @@
     margin-top: 5.4em;
     margin-left: 1.6em;
     margin-bottom: .6em;
-    border-right: 25px solid violet;
-    border-top: 55px solid #ffe451;
-    border-left: 25px solid #f07e66;
-    border-bottom: 55px solid #2dd2cb;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    background-color: #8D9ADF;
     box-shadow: 8px 8px 8px black;
 
     a:not(:last-child) {

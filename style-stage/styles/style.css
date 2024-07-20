@@ -310,6 +310,7 @@ header h2 {
 header p {
   background-color: #f77519;
   color: #000;
+  font-weight: 300;
   padding: 0.2em 0.2em;
   height: 2em;
   -webkit-transform: skew(18deg);
@@ -319,7 +320,8 @@ header p {
   object-position: center;
 }
 header a {
-  color: #27337d;
+  color: #000;
+  font-weight: 300;
 }
 
 nav ul {
@@ -359,14 +361,8 @@ nav ul li:nth-child(3) a::before {
   margin-top: 0.4em;
   margin-left: 1.6em;
   margin-bottom: 0.6em;
-  border-right: 25px solid #f77519;
-  border-top: 25px solid #f77519;
-  border-left: 25px solid #f77519;
-  border-bottom: 25px solid #f77519;
-  border-top-left-radius: 60px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border: 25px solid #f77519;
+  border-radius: 60px;
   box-shadow: 5px 5px 5px black;
 }
 nav ul li:nth-child(4) a::before {
@@ -375,9 +371,9 @@ nav ul li:nth-child(4) a::before {
   margin-top: 1.3em;
   margin-bottom: 0.6em;
   border-right: 25px solid var(--color-primary-yellow);
-  border-top: 55px solid #39fef6;
-  border-left: 55px solid #39fef6;
-  border-bottom: 35px solid #39fef6;
+  border-top: 55px solid #2dd2cb;
+  border-left: 55px solid #2dd2cb;
+  border-bottom: 35px solid #2dd2cb;
   border-top-left-radius: 60px;
   border-top-right-radius: 90px;
   border-bottom-left-radius: 60px;
@@ -522,6 +518,9 @@ nav ul a:hover::before, nav ul a:focus::before {
 #guidelines p {
   color: #27337d;
 }
+#guidelines a {
+  color: #000;
+}
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   #guidelines p:nth-of-type(2) {
     position: relative;
@@ -546,9 +545,9 @@ nav ul a:hover::before, nav ul a:focus::before {
 }
 
 #contribute h2 {
-  background-color: var(--color-secondary);
+  background-color: #fda798;
   align-self: center;
-  color: #f77519;
+  color: #fda798;
   text-shadow: 2px 2px #000;
   padding: 0.25em 0.5em;
   -webkit-transform: skew(-18deg);
@@ -556,6 +555,13 @@ nav ul a:hover::before, nav ul a:focus::before {
   -o-transform: skew(-18deg);
   background: #4556be;
   box-shadow: -8px 8px 8px #000;
+}
+#contribute p {
+  color: #000;
+}
+#contribute a {
+  color: #000;
+  font-weight: 800;
 }
 
 #files {
@@ -572,14 +578,10 @@ nav ul a:hover::before, nav ul a:focus::before {
   margin-top: 5.4em;
   margin-left: 1.6em;
   margin-bottom: 0.6em;
-  border-right: 25px solid violet;
-  border-top: 55px solid #ffe451;
-  border-left: 25px solid #f07e66;
-  border-bottom: 55px solid #2dd2cb;
-  border-top-left-radius: 60px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+  background-color: #8D9ADF;
   box-shadow: 8px 8px 8px black;
 }
 #files .container a:not(:last-child) {

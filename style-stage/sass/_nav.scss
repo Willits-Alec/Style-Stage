@@ -39,14 +39,8 @@ nav {
         margin-top: .4em;
         margin-left: 1.6em;
         margin-bottom: .6em;
-        border-right: 25px solid #f77519;
-        border-top: 25px solid #f77519;
-        border-left: 25px solid #f77519;
-        border-bottom: 25px solid #f77519;
-        border-top-left-radius: 60px;
-        border-top-right-radius: 60px;
-        border-bottom-left-radius: 60px;
-        border-bottom-right-radius: 60px;
+        border: 25px solid #f77519;
+        border-radius: 60px;
         box-shadow: 5px 5px 5px black;
         // Change color for the third item
       }
@@ -57,9 +51,9 @@ nav {
         margin-top: 1.3em;
         margin-bottom: .6em;
         border-right: 25px solid var(--color-primary-yellow);
-        border-top: 55px solid #39fef6;
-        border-left: 55px solid #39fef6;
-        border-bottom: 35px solid #39fef6;
+        border-top: 55px solid #2dd2cb;
+        border-left: 55px solid #2dd2cb;
+        border-bottom: 35px solid #2dd2cb;
         border-top-left-radius: 60px;
         border-top-right-radius: 90px;
         border-bottom-left-radius: 60px;
